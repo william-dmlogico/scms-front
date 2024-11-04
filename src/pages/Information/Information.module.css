@@ -1,0 +1,107 @@
+.informationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 46px 80px;
+    max-width: 1237px;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    color: #0e716a;
+    font: 600 40px/1.2 Inter, sans-serif;
+    align-self: flex-start;
+  }
+  
+  .underline {
+    background-color: #d9d9d9;
+    width: 94px;
+    height: 4px;
+    margin-top: 9px;
+    align-self: flex-start;
+  }
+  
+  .description {
+    color: #808080;
+    margin-top: 31px;
+    font: 400 16px/2 Inter, sans-serif;
+    align-self: flex-start;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 31px;
+  }
+  
+  .formField {
+    flex: 1 1 calc(50% - 11px);
+    min-width: 200px;
+  }
+  
+  .input {
+    width: 90%;
+    padding: 22px 24px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font: 500 15px Inter, sans-serif;
+    color: #212121;
+  }
+  
+  .visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 22px;
+    margin-top: 55px;
+    align-self: flex-start;
+  }
+  
+  .submitButton, .resetButton {
+    padding: 15px 40px;
+    border-radius: 13px;
+    font: 400 18px Roboto, sans-serif;
+    cursor: pointer;
+  }
+  
+  .submitButton {
+    background-color: #0e716a;
+    color: #fff;
+    border: 1px solid #078d84;
+  }
+  
+  .resetButton {
+    background-color: transparent;
+    color: #0e716a;
+    border: 1px solid #058866;
+  }
+  
+  @media (max-width: 991px) {
+    .informationSection {
+      padding: 40px 20px;
+    }
+  
+    .form {
+      flex-direction: column;
+    }
+  
+    .formField {
+      flex: 1 1 100%;
+    }
+  
+    .buttonGroup {
+      flex-wrap: wrap;
+    }
+  }

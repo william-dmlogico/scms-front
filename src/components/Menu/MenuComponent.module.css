@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    max-width: 286px;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgba(118, 128, 133, 1);
+    font: 500 16px Inter, sans-serif;
+  }
+  
+  .menuContainer {
+    border-radius: 9px;
+    background-color: #fff;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.13);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 15px 0 31px;
+  }
+  
+  .menuItem {
+    background-color: #f2f2f2;
+    width: 100%;
+    line-height: 24px;
+    padding: 5px 24px;
+  }
+  
+  .menuItemContainer {
+    display: flex;
+    margin-top: 13px;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 57px 0 24px;
+  }
+  
+  .menuItemSpaced {
+    margin-top: 18px;
+  }

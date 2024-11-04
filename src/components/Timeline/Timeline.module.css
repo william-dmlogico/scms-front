@@ -1,0 +1,66 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 38px;
+  }
+  
+  .timelineItem {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(16, 24, 40, 0.1), 0 1px 2px 0 rgba(16, 24, 40, 0.06);
+    padding: 23px 12px;
+    min-height: 73px;
+  }
+  
+  .timelineMarker {
+    color: #1d8880;
+    font-size: 43px;
+    line-height: 0.6;
+    margin-right: 12px;
+  }
+  
+  .timelineYear {
+    color: #808080;
+    font-size: 24px;
+    line-height: 1;
+    margin-right: 12px;
+  }
+  
+  .timelineNumber {
+    background-color: #1d8880;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+  }
+  
+  .timelineDescription {
+    color: #808080;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .timeline {
+      margin-top: 30px;
+    }
+  
+    .timelineItem {
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+  
+    .timelineDescription {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }

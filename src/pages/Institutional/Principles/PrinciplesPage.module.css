@@ -1,0 +1,33 @@
+.principlesPage {
+    font-family: Inter, sans-serif;
+    color: #2b2b2b;
+  }
+  
+  .mainContent {
+    padding: 0 80px;
+  }
+  
+  .pageTitle {
+    color: #0e716a;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 46px;
+  }
+  
+  .titleUnderline {
+    background-color: #d9d9d9;
+    width: 94px;
+    height: 4px;
+    margin-top: 9px;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      padding: 0 20px;
+    }
+  
+    .pageTitle {
+      margin-top: 40px;
+    }
+  }

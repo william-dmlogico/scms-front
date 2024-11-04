@@ -1,0 +1,103 @@
+.institutionalHistory {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .mainContent {
+    padding: 0 80px;
+  }
+  
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 46px;
+  }
+  
+  .pageTitle {
+    color: #0e716a;
+    font: 600 40px/1.2 Inter, sans-serif;
+    align-self: flex-start;
+  }
+  
+  .titleUnderline {
+    background-color: #d9d9d9;
+    width: 94px;
+    height: 4px;
+    align-self: flex-start;
+    margin-top: 9px;
+  }
+  
+  .sectionTitle {
+    color: #2b2b2b;
+    font: 600 30px/2 Inter, sans-serif;
+    align-self: flex-start;
+    margin-top: 38px;
+  }
+  
+  .historyContent {
+    margin-top: 31px;
+    width: 100%;
+    max-width: 1236px;
+  }
+  
+  .textImageWrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .historyText {
+    color: #808080;
+    font: 400 16px/26px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    flex: 1;
+  }
+  
+  .historyImage {
+    aspect-ratio: 1.45;
+    object-fit: contain;
+    width: 100%;
+    max-width: 50%;
+    border-radius: 17px;
+    box-shadow: 4px 7px 18px rgba(0, 0, 0, 0.13);
+  }
+  
+  .additionalInfo {
+    margin-top: 51px;
+  }
+  
+  .infoText {
+    color: #808080;
+    font: 400 16px/26px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      padding: 0 20px;
+    }
+  
+    .heroSection {
+      margin-top: 40px;
+    }
+  
+    .historyContent,
+    .historyText,
+    .historyImage,
+    .additionalInfo,
+    .infoText {
+      max-width: 100%;
+    }
+  
+    .textImageWrapper {
+      flex-direction: column;
+    }
+  
+    .historyImage {
+      margin-top: 36px;
+    }
+  
+    .additionalInfo {
+      margin-top: 40px;
+    }
+  }

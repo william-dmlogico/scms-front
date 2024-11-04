@@ -1,0 +1,74 @@
+.footer {
+    background-color: #0e716a;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    padding: 62px 80px 40px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .logo {
+    width: 181px;
+    object-fit: contain;
+  }
+  
+  .sectionTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .pageLinks ul,
+  .socialLinks ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pageLinks a,
+  .socialLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+    padding: 4px 0;
+  }
+  
+  .socialLink {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .socialIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .copyright {
+    margin-top: 14px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      padding: 62px 20px 40px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  }

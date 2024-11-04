@@ -1,0 +1,150 @@
+.banner {
+    border-radius: 0;
+    display: flex;
+    padding-top: 12px;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 21px;
+  }
+  
+  .content {
+    gap: 20px;
+    display: flex;
+  }
+  
+  .textColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 36%;
+    margin-left: 0;
+  }
+  
+  .textContent {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-family: Inter, sans-serif;
+    margin: auto 0;
+  }
+  
+  .title {
+    color: #222;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 65px;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-weight: 500;
+    font-size: 33px;
+    display: block;
+  }
+  
+  .ctaButton {
+    border-radius: 13px;
+    background-color: #0e716a;
+    align-self: flex-start;
+    margin-top: 24px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 13px 38px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #0a5751;
+  }
+  
+  .ctaButton:focus {
+    outline: 2px solid #0a5751;
+    outline-offset: 2px;
+  }
+  
+  .imageColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 64%;
+    margin-left: 20px;
+  }
+  
+  .imageWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 462px;
+    margin-top: -12px;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 32px 0;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .foregroundImage {
+    aspect-ratio: 1.26;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    max-width: 502px;
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .textColumn,
+    .imageColumn {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .textContent {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .title {
+      font-size: 40px;
+      line-height: 53px;
+    }
+  
+    .imageWrapper {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 32px 0;
+    }
+  
+    .ctaButton {
+      padding: 13px 20px;
+    }
+  }
+  

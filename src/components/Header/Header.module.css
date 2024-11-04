@@ -1,0 +1,154 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .topBar {
+    background-color: #0e716a;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 13px;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 11px 5%;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 991px) {
+    .topBar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .addressWrapper {
+    align-self: start;
+    display: flex;
+    gap: 10px;
+  }
+  
+  @media (max-width: 991px) {
+    .addressWrapper {
+      align-self: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 22px;
+  }
+  
+  .address {
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+  
+  .participateWrapper {
+    display: flex;
+    gap: 11px;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 991px) {
+    .participateWrapper {
+      white-space: initial;
+    }
+  }
+  
+  .participateIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+  }
+  
+  .participateText {
+    margin: auto 0;
+  }
+  
+  .navbar {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 16px;
+    color: #768085;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 5%;
+    }
+  }
+  
+  .logo {
+    aspect-ratio: 1.04;
+    object-fit: contain;
+    object-position: center;
+    width: 110px;
+    max-width: 100%;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 38px;
+    flex-wrap: wrap;
+    margin: auto 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .navLinks {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  }
+  
+  .activeLink {
+    display: flex;
+    flex-direction: column;
+    color: #0e716a;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 991px) {
+    .activeLink {
+      white-space: initial;
+    }
+  }
+  
+  .activeLinkUnderline {
+    background-color: #0e716a;
+    display: flex;
+    height: 2px;
+    margin-top: 5px;
+  }
+  
+  .navLink {
+    flex-basis: auto;
+    cursor: pointer;
+  }
+  
+  .navLink:hover {
+    color: #0e716a;
+  }
