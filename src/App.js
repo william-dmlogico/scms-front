@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import Header from './components/Header/Header';
+import Institucional from './components/Institucional/Institucional';
+import Banner from './components/Banner/Banner';
+import Objective from './components/Objective/Objective';
+import ImportanceSection from './components/ImportanceSection/ImportanceSection';
+import ContactForm from './components/ContactForm/ContactForm';
+import MapComponent from './components/Map/MapComponent';
+import Footer from './components/Footer/Footer';
+import styles from './pages/HomePage/HomePage.module.css';
+import HomePage from './pages/HomePage/HomePage';
+import PrinciplesPage from './pages/Institutional/Principles/PrinciplesPage';
+import Information from './pages/Information/Information';
+import GalleryPage from './pages/Gallery/GalleryPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div className={styles.homePage}>
+      <Header />
+      <main>
+      <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/principios" element={<PrinciplesPage />} />
+          <Route path="/informacoes" element={<Information />} />
+          <Route path="/galeria" element={<GalleryPage />} />
+      </Routes>
+
+      </main>
+      <Footer />
     </div>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -5,6 +5,7 @@
     font-weight: 500;
     width: 100%;
     overflow-x: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05); /* Sombra suave */
   }
   
   .topBar {
@@ -18,6 +19,7 @@
     justify-content: space-between;
     padding: 11px 5%;
     box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05); /* Sombra suave */
   }
   
   @media (max-width: 991px) {
@@ -139,7 +141,6 @@
   
   .activeLinkUnderline {
     background-color: #0e716a;
-    display: flex;
     height: 2px;
     margin-top: 5px;
   }
@@ -151,4 +152,33 @@
   
   .navLink:hover {
     color: #0e716a;
+  }
+
+
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+  .submenuItem {
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  
+  .submenuItem a {
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 14px;
+    z-index: 1;
+  }
+  
+  .submenuItem a:hover {
+    color: #006f63;
   }

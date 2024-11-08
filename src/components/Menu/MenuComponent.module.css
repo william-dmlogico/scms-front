@@ -8,6 +8,7 @@
   }
   
   .menuContainer {
+    position: absolute;
     border-radius: 9px;
     background-color: #fff;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.13);

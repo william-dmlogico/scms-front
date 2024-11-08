@@ -6,13 +6,7 @@ import styles from './GalleryPage.module.css';
 
 const GalleryPage = () => {
   return (
-    <div className={styles.galleryPage}>
-      <Header />
-      <main className={styles.mainContent}>
-        <GallerySection />
-      </main>
-      <Footer />
-    </div>
+      <GallerySection />
   );
 };
 

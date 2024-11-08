@@ -3,21 +3,37 @@ import styles from './Header.module.css';
 import logo_header from '../../images/logo_header.png'
 import participe_header from '../../images/participe_header.png'
 import pin_header from '../../images/pin_gps_location.png'
+import MenuComponent from "../Menu/MenuComponent";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const navItems = [
-  { title: "Institucional", isActive: true },
-  { title: "Informações", isActive: false },
-  { title: "Produtos", isActive: false },
-  { title: "Galeria", isActive: false },
-  { title: "Fale conosco", isActive: false },
+  { title: "Home", path: "/", isActive: true },
+  { 
+    title: "Institucional", 
+    isActive: false,
+    submenu: [
+      { title: "Princípios da entidade, Visão, Missão, Valores e Solidez" },
+      { title: "História da comunidade" },
+      { title: "Sustentabilidade" }
+    ]
+  },
+  { title: "Informações", path: "/informacoes", isActive: false },
+  { title: "Produtos", path: "/informacoes", isActive: false },
+  { title: "Galeria", path: "/galeria", isActive: false },
+  { title: "Fale conosco", path: "/", isActive: false },
   { title: "Área restrita", isActive: false }
 ];
 
 function Header() {
+
+  const navigate = useNavigate();
+
   const [activeNavItem, setActiveNavItem] = useState(0);
 
-  const handleNavItemClick = (index) => {
+  const handleNavItemClick = (index, item) => {
     setActiveNavItem(index);
+    navigate(item.path);
   };
 
   return (
@@ -41,10 +57,22 @@ function Header() {
             <li
               key={index}
               className={index === activeNavItem ? styles.activeLink : styles.navLink}
-              onClick={() => handleNavItemClick(index)}
+              onClick={() => handleNavItemClick(index, item)}
             >
               {item.title}
               {index === activeNavItem && <div className={styles.activeLinkUnderline} />}
+              {/* Verifica se o item tem submenu */}
+              {item.submenu && index === activeNavItem && (
+                <ul className={styles.submenu}>
+                  {item.submenu.map((submenuItem, subIndex) => (
+                    <li key={subIndex} className={styles.submenuItem}>
+                      <Link to={submenuItem.path}>
+                        {submenuItem.title}
+                        </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>

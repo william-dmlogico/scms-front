@@ -12,16 +12,12 @@ import styles from './HomePage.module.css';
 const HomePage = () => {
   return (
     <div className={styles.homePage}>
-      <Header />
-      <main>
         <Institucional />
         <Banner />
         <Objective />
         <ImportanceSection />
         <ContactForm />
         <MapComponent />
-      </main>
-      <Footer />
     </div>
   );
 };
