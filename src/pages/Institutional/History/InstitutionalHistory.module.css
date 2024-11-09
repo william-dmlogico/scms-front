@@ -18,7 +18,8 @@
   
   .pageTitle {
     color: #0e716a;
-    font: 600 40px/1.2 Inter, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
     align-self: flex-start;
   }
   
@@ -41,6 +42,7 @@
     margin-top: 31px;
     width: 100%;
     max-width: 1236px;
+    margin-bottom: 50px;
   }
   
   .textImageWrapper {

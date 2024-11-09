@@ -6,12 +6,8 @@ import Timeline from '../../../components/Timeline/Timeline';
 
 const InstitutionalHistory = () => {
   return (
-    <div className={styles.institutionalHistory}>
-      <Header />
       <main className={styles.mainContent}>
         <section className={styles.heroSection}>
-          <h1 className={styles.pageTitle}>Institucional</h1>
-          <div className={styles.titleUnderline} />
           <h2 className={styles.sectionTitle}>História da comunidade</h2>
         </section>
         <section className={styles.historyContent}>
@@ -33,10 +29,9 @@ const InstitutionalHistory = () => {
           <p className={styles.infoText}>
             Com a evolução da discussão do modelo ideal de Previdência Social para o Brasil, o segmento de seguros e previdência privada abriu-se para os bancos em geral, e os produtos das Entidades genuínas de Previdência Privada, foram perdendo sua atratividade comercial.
           </p>
+          <br />
         </section>
       </main>
-      <Footer />
-    </div>
   );
 };
 

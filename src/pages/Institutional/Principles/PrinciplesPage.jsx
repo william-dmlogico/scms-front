@@ -7,16 +7,10 @@ import styles from './PrinciplesPage.module.css';
 
 const PrinciplesPage = () => {
     return (
-      <div className={styles.institutionalPage}>
-        <Header />
         <main className={styles.mainContent}>
-          <h1 className={styles.pageTitle}>Institucional</h1>
-          <div className={styles.titleUnderline}></div>
           <PrinciplesSection />
           <MissionVisionValues />
         </main>
-        <Footer />
-      </div>
     );
   };
   
