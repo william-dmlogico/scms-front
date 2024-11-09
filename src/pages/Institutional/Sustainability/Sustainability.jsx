@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Sustainability.module.css';
 import arrow from '../../../images/arrowbackbutton.svg'
+import politica from "../../../documents/POLIìTICA_DE_SUSTENTABILIDADE_SCMS_final.pdf"
 
 function Sustainability() {
   const policies = [
@@ -33,7 +34,8 @@ function Sustainability() {
       <p className={styles.additionalInfo}>
         Atualmente, a SCMS trabalha no desenvolvimento da sua Política de Sustentabilidade em atendimento à Circular nº 666/22.
         <br /><br />
-        <a href="#" className={styles.policyLink}>POLÍTICA DE SUSTENTABILIDADE</a>
+        <a href={politica} className={styles.policyLink} download>POLÍTICA DE SUSTENTABILIDADE</a>
+        <br /><br />
       </p>
     </main>
   );

@@ -27,15 +27,17 @@
 }
 
 .number {
-  width: 24px;
-  height: 24px;
-  background-color: #00796b;
+  top: 8px;
+  left: 8px;
+  background-color: #1d8880;
   color: #fff;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .year {
@@ -55,6 +57,6 @@
 
 .content {
   padding: 15px;
-  font-size: 14px;
+  font: 400 16px/26px Inter, -apple-system, Roboto, Helvetica, sans-serif;
   color: #666;
 }
