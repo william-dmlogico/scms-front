@@ -58,11 +58,10 @@
   
   .historyImage {
     aspect-ratio: 1.45;
-    object-fit: contain;
+    object-fit: fill;
     width: 100%;
     max-width: 50%;
     border-radius: 17px;
-    box-shadow: 4px 7px 18px rgba(0, 0, 0, 0.13);
   }
   
   .additionalInfo {

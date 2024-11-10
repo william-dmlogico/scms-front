@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './InstitutionalHistory.module.css';
-import Header from '../../../components/Header/Header';
-import Footer from '../../../components/Footer/Footer';
 import Timeline from '../../../components/Timeline/Timeline';
+import imagem_historia from '../../../images/institutional/historia_foto.svg'
 
 const InstitutionalHistory = () => {
   return (
@@ -21,7 +20,7 @@ const InstitutionalHistory = () => {
               <br /><br />
               Dessa forma, retomando e alavancando rapidamente sua Produção e Resultado Financeiro, vendo crescer seu superávit, liquidez e solvência a cada ano.
             </p>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c6e645aefdf46e402c1eeb03331370dea549c731d7c09e4172f270db58b421e?placeholderIfAbsent=true&apiKey=2e7ba8381ca4414b831475c37bf6e9cc" alt="Historical image of SCMS" className={styles.historyImage} />
+            <img src={imagem_historia} alt="Historical image of SCMS" className={styles.historyImage} />
           </div>
         </section>
         <Timeline />

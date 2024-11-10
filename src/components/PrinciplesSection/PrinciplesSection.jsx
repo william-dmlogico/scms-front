@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './PrinciplesSection.module.css';
+import imagem_institucional from '../../images/institutional/institucional_foto.svg'
 
 const PrinciplesSection = () => {
   const principles = [
@@ -24,7 +25,7 @@ const PrinciplesSection = () => {
           ))}
         </ul>
       </div>
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/13e91ba5c2c42c8d2cce886d589a08a9ac2c02bb94e9670daf40234383a34358?placeholderIfAbsent=true&apiKey=2e7ba8381ca4414b831475c37bf6e9cc" alt="Principles illustration" className={styles.principlesImage} />
+      <img src={imagem_institucional} alt="Principles illustration" className={styles.principlesImage} />
     </section>
   );
 };
