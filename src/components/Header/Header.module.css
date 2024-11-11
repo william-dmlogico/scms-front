@@ -4,7 +4,6 @@
     font-family: Inter, sans-serif;
     font-weight: 500;
     width: 100%;
-    overflow-x: hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05); /* Sombra suave */
   }
   
@@ -114,6 +113,7 @@
     margin: auto 0;
     list-style-type: none;
     padding: 0;
+    position: relative;
   }
   
   @media (max-width: 991px) {
@@ -165,7 +165,9 @@
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
+    margin: 0;
+    z-index: 10000; /* Garante que o submenu ficará na frente de outros elementos NOVO */
+  }
   
   .submenuItem {
     padding: 10px 20px;
@@ -176,7 +178,6 @@
     text-decoration: none;
     color: #6b6b6b;
     font-size: 14px;
-    z-index: 1;
   }
   
   .submenuItem a:hover {

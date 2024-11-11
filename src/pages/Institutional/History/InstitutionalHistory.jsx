@@ -7,7 +7,7 @@ const InstitutionalHistory = () => {
   return (
       <main className={styles.mainContent}>
         <section className={styles.heroSection}>
-          <h2 className={styles.sectionTitle}>História da comunidade</h2>
+          <h2 className={styles.sectionTitle}>Sobre</h2>
         </section>
         <section className={styles.historyContent}>
           <div className={styles.textImageWrapper}>
