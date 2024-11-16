@@ -8,11 +8,13 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import styles from './pages/HomePage/HomePage.module.css';
 import AppRoutes from "./routes/AppRoutes";
+import ScrollToTop from "./utils/scrollToTop";
 
 function App() {
   return (
     <Router>
       <div className={styles.homePage}>
+      <ScrollToTop />
         <Header />
         <main>
           <AppRoutes />

@@ -1,0 +1,50 @@
+.contactInfo {
+    width: 32%;
+  }
+  
+  .note {
+    color: #1d8880;
+    font: 700 17px/26px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .infoWrapper {
+    display: flex;
+    margin-top: 65px;
+    gap: 11px;
+  }
+  
+  .iconColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+  
+  .iconCircle {
+    background-color: rgba(14, 113, 106, 0.09);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+  }
+  
+  .textColumn {
+    color: #000;
+    font: 500 15px/30px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .contactInfo {
+      width: 100%;
+    }
+  
+    .note {
+      margin-left: 8px;
+    }
+  
+    .infoWrapper {
+      margin: 40px 9px 0 0;
+    }
+  
+    .iconColumn {
+      gap: 40px;
+    }
+  }

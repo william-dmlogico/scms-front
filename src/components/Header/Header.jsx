@@ -3,9 +3,7 @@ import styles from './Header.module.css';
 import logo_header from '../../images/logo_header.png'
 import participe_header from '../../images/participe_header.png'
 import pin_header from '../../images/pin_gps_location.png'
-import MenuComponent from "../Menu/MenuComponent";
-import { Link, useNavigate } from "react-router-dom";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useNavigate } from "react-router-dom";
 
 /*
 { 
@@ -24,20 +22,20 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 */
 
 const navItems = [
-  { title: "Home", path: "/", isActive: true },
+  { title: "Home", path: "/scms", isActive: true },
   { 
     title: "Institucional", 
     isActive: false,
     submenu: [
-      { title: "Sobre", path: "/historia" },
-      { title: "Sustentabilidade", path: "/sustentabilidade" },
-      { title: "Princípios da entidade, Visão, Missão, Valores e Solidez", path: "/institucional" }
+      { title: "Sobre", path: "/scms/historia" },
+      { title: "Sustentabilidade", path: "/scms/sustentabilidade" },
+      { title: "Princípios da entidade, Visão, Missão, Valores e Solidez", path: "/scms/institucional" }
     ]
   },
-  { title: "Informações", path: "/informacoes", isActive: false },
-  { title: "Produtos", path: "/produtos", isActive: false },
-  { title: "Galeria", path: "/galeria", isActive: false },
-  { title: "Fale conosco", path: "/", isActive: false },
+  { title: "Informações", path: "/scms/informacoes", isActive: false },
+  { title: "Produtos", path: "/scms/produtos", isActive: false },
+  { title: "Galeria", path: "/scms/galeria", isActive: false },
+  { title: "Fale conosco", path: "/scms/contato", isActive: false },
   { title: "Área restrita", isActive: false }
 ];
 

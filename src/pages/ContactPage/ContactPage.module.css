@@ -1,0 +1,99 @@
+.contactPage {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    padding: 46px 0;
+  }
+  
+  .contactSection {
+    max-width: 1235px;
+    width: 100%;
+  }
+  
+  .pageTitle {
+    color: #0e716a;
+    font: 600 40px/1.2 Inter, sans-serif;
+  }
+  
+  .underline {
+    background-color: #d9d9d9;
+    height: 4px;
+    width: 94px;
+    margin-top: 9px;
+  }
+  
+  .contactContent {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .contactInfo {
+    width: 32%;
+  }
+  
+  .officeHours {
+    color: #1d8880;
+    font: 700 17px/26px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 65px;
+  }
+  
+  .infoItem {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+  }
+  
+  .infoIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+  
+  .iconCircle {
+    background-color: rgba(14, 113, 106, 0.09);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    object-fit: contain;
+  }
+  
+  .infoText {
+    color: #000;
+    font: 500 15px/30px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .contactContent {
+      flex-direction: column;
+    }
+  
+    .contactInfo {
+      width: 100%;
+    }
+  
+    .officeHours {
+      margin-left: 8px;
+    }
+  
+    .infoList {
+      margin: 40px 9px 0 0;
+    }
+  }

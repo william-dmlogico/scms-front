@@ -4,12 +4,31 @@ import logo_footer from '../../images/logo_footer.svg'
 import icon_facebook from '../../images/IconFacebook.png'
 import icon_whatsapp from '../../images/IconWhatsapp.svg'
 import icon_instagram from '../../images/IconInstagram.svg'
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const handleNavItemClick = (index, item) => {
+    if (item.path) {
+      navigate(item.path);
+      window.scrollTo(0, 0);
+    }
+  };
+
   const socialLinks = [
     { name: 'Facebook', icon: icon_facebook },
     { name: 'Instagram', icon: icon_instagram },
     { name: 'Whatsapp', icon: icon_whatsapp }
+  ];
+
+  const navItems = [
+    { title: "Home", path: "/scms", isActive: true },
+    { title: "Sobre", path: "/scms/historia", isActive: false },
+    { title: "Sustentabilidade", path: "/scms/sustentabilidade", isActive: false },
+    { title: "Galeria", path: "/scms/galeria", isActive: false },
+    { title: "Contato", path: "/scms", isActive: false }
   ];
 
   return (
@@ -27,11 +46,16 @@ const Footer = () => {
         <nav className={styles.pageLinks}>
           <h3 className={styles.sectionTitle}>Page</h3>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#sustainability">Sustentabilidade</a></li>
-            <li><a href="#gallery">Galeria</a></li>
-            <li><a href="#contact">Contato</a></li>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <span 
+                  onClick={() => handleNavItemClick(index, item)}
+                  className={styles.linkItem}
+                >
+                  {item.title}
+                </span>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className={styles.socialLinks}>
@@ -41,7 +65,7 @@ const Footer = () => {
               <li key={index}>
                 <a href={`#${link.name.toLowerCase()}`} className={styles.socialLink}>
                   <img src={link.icon} alt={`${link.name} icon`} className={styles.socialIcon} />
-                  <span>{link.name}</span>
+                  {link.name}
                 </a>
               </li>
             ))}
@@ -54,5 +78,13 @@ const Footer = () => {
     </footer>
   );
 };
+
+/*                      
+<li><a href="#home">Home</a></li>
+<li><a href="#about">Sobre nós</a></li>
+<li><a href="#sustainability">Sustentabilidade</a></li>
+<li><a href="#gallery">Galeria</a></li>
+<li><a href="#contact">Contato</a></li>
+*/
 
 export default Footer;

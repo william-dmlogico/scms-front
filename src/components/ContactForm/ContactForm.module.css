@@ -85,6 +85,14 @@
     border: 0;
   }
   
+  .successMessage {
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 1000;
+  }
+  
   @media (max-width: 991px) {
     .form {
       padding: 0 20px;

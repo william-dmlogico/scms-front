@@ -1,107 +1,156 @@
 .informationSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 46px 80px;
-    max-width: 1400px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 46px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  color: #0e716a;
+  font: 600 40px/1.2 Inter, sans-serif;
+  align-self: flex-start;
+}
+
+.underline {
+  background-color: #d9d9d9;
+  width: 94px;
+  height: 4px;
+  margin-top: 9px;
+  align-self: flex-start;
+}
+
+.description {
+  color: #808080;
+  margin-top: 31px;
+  font: 400 16px/2 Inter, sans-serif;
+  align-self: flex-start;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.input {
+  flex: 1;
+  min-width: 150px;
+  padding: 22px 24px;
+  font: 500 15px Inter, sans-serif;
+  color: #212121;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.inputLarge {
+  flex: 1.55;
+  min-width: 250px;
+  padding: 22px 24px;
+  font: 500 15px Inter, sans-serif;
+  color: #212121;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.inputMedium {
+  flex: 1;
+  min-width: 180px;
+  padding: 22px 24px;
+  font: 500 15px Inter, sans-serif;
+  color: #212121;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.inputSmall {
+  flex: 0.5;
+  min-width: 100px;
+  padding: 10px;
+  font: 500 15px Inter, sans-serif;
+  color: #212121;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 22px;
+  margin-top: 55px;
+  align-self: flex-start;
+}
+
+.submitButton,
+.resetButton {
+  padding: 15px 40px;
+  border-radius: 13px;
+  font: 400 18px Roboto, sans-serif;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: #0e716a;
+  color: #fff;
+  border: 1px solid #078d84;
+}
+
+.resetButton {
+  background-color: transparent;
+  color: #0e716a;
+  border: 1px solid #058866;
+}
+
+.formSectionLabel {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.successMessage {
+  color: green;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 1000;
+}
+
+@media (max-width: 991px) {
+  .informationSection {
+    padding: 40px 20px;
   }
-  
-  .sectionTitle {
-    color: #0e716a;
-    font: 600 40px/1.2 Inter, sans-serif;
-    align-self: flex-start;
-  }
-  
-  .underline {
-    background-color: #d9d9d9;
-    width: 94px;
-    height: 4px;
-    margin-top: 9px;
-    align-self: flex-start;
-  }
-  
-  .description {
-    color: #808080;
-    margin-top: 31px;
-    font: 400 16px/2 Inter, sans-serif;
-    align-self: flex-start;
-  }
-  
+
   .form {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
-    margin-top: 31px;
+    flex-direction: column;
   }
-  
+
   .formField {
-    flex: 1 1 calc(50% - 11px);
-    min-width: 200px;
+    flex: 1 1 100%;
   }
-  
-  .input {
-    width: 90%;
-    padding: 22px 24px;
-    border: 1px solid #000;
-    border-radius: 8px;
-    font: 500 15px Inter, sans-serif;
-    color: #212121;
-  }
-  
-  .visuallyHidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-  
+
   .buttonGroup {
-    display: flex;
-    gap: 22px;
-    margin-top: 55px;
-    align-self: flex-start;
+    flex-wrap: wrap;
   }
-  
-  .submitButton, .resetButton {
-    padding: 15px 40px;
-    border-radius: 13px;
-    font: 400 18px Roboto, sans-serif;
-    cursor: pointer;
-  }
-  
-  .submitButton {
-    background-color: #0e716a;
-    color: #fff;
-    border: 1px solid #078d84;
-  }
-  
-  .resetButton {
-    background-color: transparent;
-    color: #0e716a;
-    border: 1px solid #058866;
-  }
-  
-  @media (max-width: 991px) {
-    .informationSection {
-      padding: 40px 20px;
-    }
-  
-    .form {
-      flex-direction: column;
-    }
-  
-    .formField {
-      flex: 1 1 100%;
-    }
-  
-    .buttonGroup {
-      flex-wrap: wrap;
-    }
-  }
+}

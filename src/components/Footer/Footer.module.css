@@ -35,20 +35,23 @@
     padding: 0;
   }
   
-  .pageLinks a,
-  .socialLink {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 21px;
-    display: block;
-    padding: 4px 0;
-  }
+  /* Remover ou comentar as classes antigas que não estão mais em uso */
+  /* .pageLinks a, .pageLinks li {...} */
   
   .socialLink {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 12px;
+    padding: 4px 0;
+    text-decoration: none;
+  }
+  
+  .socialLink:hover {
+    text-decoration: underline;
   }
   
   .socialIcon {
@@ -71,4 +74,17 @@
     .content {
       flex-direction: column;
     }
+  }
+
+  .linkItem {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 0;
+  }
+  
+  .linkItem:hover {
+    text-decoration: underline;
   }
