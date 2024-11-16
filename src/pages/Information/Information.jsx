@@ -2,8 +2,10 @@ import { useState } from 'react';
 import React, { useRef } from 'react';
 import styles from './Information.module.css';
 import emailjs from '@emailjs/browser';
+import Modal from '../../components/Modal/Modal';
 
 const Information = () => {
+
   const form = useRef();
 
   const [formData, setFormData] = useState({
@@ -19,6 +21,7 @@ const Information = () => {
     state: '',
     zipCode: '',
   });
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,14 +31,12 @@ const Information = () => {
     }));
   };
 
-  const [successMessage, setSuccessMessage] = useState('');
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm('service_dlogico_wse', 'template_0m21d17', form.current, {
-        publicKey: 'VlidVXepxQFrZSmZr',
+        publicKey: 'VlidVXepxQFrZSmZr2',
       })
       .then(
         () => {
@@ -56,6 +57,7 @@ const Information = () => {
         },
         (error) => {
           console.error('FAILED...', error.text);
+          setSuccessMessage('Falha no envio da mensagem, favor tentar novamente, daqui a pouco, ou entrar em contato por meio de outros canais.');
         }
       );
   };
@@ -77,6 +79,10 @@ const Information = () => {
     setSuccessMessage('');
   };
 
+  const handleCloseModal = () => {
+    setSuccessMessage('');
+  };
+
   return (
     <section className={styles.informationSection}>
       <h1 className={styles.sectionTitle}>Informações</h1>
@@ -85,7 +91,7 @@ const Information = () => {
       Atualização de cadastro do associado Campos: Nome Completo, Nome Social, CPF, Endereço rua, bairro, complemento, complemento cidade, CEP, UF, telefone e e-mail
       </p>
       <br />
-      {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
+      {successMessage && <Modal message={successMessage} onClose={handleCloseModal} />}
       <form ref={form} className={styles.form} onSubmit={sendEmail} onReset={handleReset}>
         <div className={styles.formRow}>
           <input

@@ -8,7 +8,6 @@ import InstitutionalHistory from './pages/Institutional/History/InstitutionalHis
 import Sustainability from './pages/Institutional/Sustainability/Sustainability';
 import GalleryPage from './pages/Gallery/GalleryPage';
 import Information from './pages/Information/Information';
-import Information2 from './pages/Information/Information2';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

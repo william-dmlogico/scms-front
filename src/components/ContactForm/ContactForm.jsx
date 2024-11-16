@@ -2,6 +2,7 @@ import { useState } from 'react';
 import React, { useRef } from 'react';
 import styles from './ContactForm.module.css';
 import emailjs from '@emailjs/browser';
+import Modal from '../Modal/Modal';
 
 const ContactForm = () => {
 
@@ -30,7 +31,7 @@ const ContactForm = () => {
 
     emailjs
       .sendForm('service_dlogico_wse', 'template_utsmk3a', form.current, {
-        publicKey: 'VlidVXepxQFrZSmZr',
+        publicKey: 'VlidVXepxQFrZSmZr5',
       })
       .then(
         () => {
@@ -40,12 +41,17 @@ const ContactForm = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setSuccessMessage('Falha no envio da mensagem, favor tentar novamente, daqui a pouco, ou entrar em contato por meio de outros canais.');
         },
       );
   };
 
   const handleReset = () => {
     setFormData({ name: '', email: '', phone: '', message: '' });
+    setSuccessMessage('');
+  };
+
+  const handleCloseModal = () => {
     setSuccessMessage('');
   };
   
@@ -55,7 +61,7 @@ const ContactForm = () => {
       <p className={styles.description}>
         Nos mande uma mensagem e em breve entraremos em contato.
       </p>
-      {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
+      {successMessage && <Modal message={successMessage} onClose={handleCloseModal} />}
       <form ref={form} className={styles.form}  onSubmit={sendEmail} onReset={handleReset}>
         <div className={styles.inputGroup}>
           <label htmlFor="name" className={styles.visuallyHidden}>Nome</label>
