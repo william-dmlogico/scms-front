@@ -5,22 +5,6 @@ import participe_header from '../../images/participe_header.png'
 import pin_header from '../../images/pin_gps_location.png'
 import { useNavigate } from "react-router-dom";
 
-/*
-{ 
-  title: "Institucional", 
-  isActive: false,
-  submenu: [
-    { title: "Princípios da entidade, Visão, Missão, Valores e Solidez" },
-    { title: "História da comunidade" },
-    { title: "Sustentabilidade" }
-  ]
-},
-
-  { title: "Institucional", path: "/institucional", isActive: false },
-  { title: "História", path: "/historia", isActive: false },
-  { title: "Sustentabilidade", path: "/sustentabilidade", isActive: false },
-*/
-
 const navItems = [
   { title: "Home", path: "/scms", isActive: true },
   { 
@@ -35,8 +19,7 @@ const navItems = [
   { title: "Informações", path: "/scms/informacoes", isActive: false },
   { title: "Produtos", path: "/scms/produtos", isActive: false },
   { title: "Galeria", path: "/scms/galeria", isActive: false },
-  { title: "Fale conosco", path: "/scms/contato", isActive: false },
-  { title: "Área restrita", isActive: false }
+  { title: "Fale conosco", path: "/scms/contato", isActive: false }
 ];
 
 function Header() {
