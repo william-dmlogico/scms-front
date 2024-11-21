@@ -23,6 +23,3 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expor a porta 80 para o Nginx
 EXPOSE 8382
-
-# Comando padrão para iniciar o Nginx
-CMD ["nginx", "-g", "daemon off;"]
