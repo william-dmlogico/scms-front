@@ -14,9 +14,9 @@ const InstitutionalHistory = () => {
             <p className={styles.historyText}>
               Em sua história a comunidade caxiense viu a SCMS crescer. Tendo nos anos 60 mais de 10.000 associados, oferecendo ao mercado Pecúlio por morte, invalidez e renda mensal.
               <br /><br />
-              Com a abertura dos produtos previdenciários p/ os Bancos, as Entidades genuínas de Previdência, foram perdendo sua atratividade comercial c/ isso a SCMS entrou em declínio sob o ponto de vista financeiro e operacional.
+              Com a abertura dos produtos previdenciários para os Bancos, as Entidades genuínas de Previdência, foram perdendo sua atratividade comercial com isso a SCMS entrou em declínio sob o ponto de vista financeiro e operacional.
               <br /><br />
-              Após esse período de estagnação e reflexão a SCMS em 2003, firmou parceria c/ o Banco BGN. Adotou uma gestão, c/ racionalização e otimização nos seus processos e custos, sem prejuízo de sua eficiência e qualidade, passando a ter seu foco de atuação junto ao funcionalismo público federal, ofertando seu Pecúlio e Assistência Financeira pelo BGN.
+              Após esse período de estagnação e reflexão a SCMS em 2003, firmou parceria com o Banco BGN. Adotou uma gestão, com racionalização e otimização nos seus processos e custos, sem prejuízo de sua eficiência e qualidade, passando a ter seu foco de atuação junto ao funcionalismo público federal, ofertando seu Pecúlio e Assistência Financeira pelo BGN.
               <br /><br />
               Dessa forma, retomando e alavancando rapidamente sua Produção e Resultado Financeiro, vendo crescer seu superávit, liquidez e solvência a cada ano.
             </p>
